@@ -1,0 +1,397 @@
+/*===================================Fontes Gerais===================================/
+Body - 16px
+H1 - 32px
+H2 - 
+H3 - 
+SPAN - 14px
+P - 16px
+A - 16px
+
+*/
+
+/*===================================Breakpoints Gerais===================================/
+
+@media (min-width:320px) { smartphones, portrait iPhone, portrait 480x320 phones (Android) }
+@media (min-width:480px) { smartphones, Android phones, landscape iPhone }
+@media (min-width:600px) { portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) }
+@media (min-width:801px) { tablet, landscape iPad, lo-res laptops ands desktops }
+@media (min-width:1025px) { big landscape tablets, laptops, and desktops }
+@media (min-width:1281px) { hi-res laptops and desktops }
+
+/*
+
+
+/*===================================Fontes===================================*/
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300&display=swap');
+
+/*===================================Estilos Gerais===================================*/
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body, p, h1, h2, h3, h4, ul, li, blockquote {
+	padding: 0px;
+	margin: 0px;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+	background: url("https://img.freepik.com/free-vector/seamless-gold-rhombus-grid-pattern-black-background_53876-97589.jpg?w=900&t=st=1671217204~exp=1671217804~hmac=a4c109b060ec8f86f6b816a843629d5f8ba0a080c6cefddc101cc51f6d3f9ca4");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	color: white;
+	font-size: 18px;
+	line-height: 1.3;
+	text-align: left;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Anton', sans-serif;
+}
+
+* {box-sizing:border-box;}
+
+li {
+	list-style: none;	
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+  font-size: 1.825em;
+}
+
+h3 {
+	font-size: 1.250em;
+}
+
+span {
+	font-size: 1em;
+	color: black;
+}
+
+input, button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.section_form, .section_vantagens, .section_fiquePorDentro {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 50px 0;
+}
+
+.section_vantagens, .section_fiquePorDentro {
+	background-color: #1c1c1c;
+}
+
+.text_red {
+	color: #cc3f3f;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.subtitle_section {
+	font-size: 26px;
+}
+
+.title_section {
+	font-size: 32px;
+}
+
+.text_section {
+	font-size: 16px;
+}
+
+/*===========================ESTILO HEADER==================*/
+
+#app {
+	width: 100%;
+	height: 100%;
+}
+
+header {
+	width: 100%;
+	height: auto;
+}
+
+.div_logo {
+	width: 100%;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0;
+}
+
+.text_logo {
+	font-size: 20px;
+}
+
+/*============================SECTION FORM=======================*/
+
+.div_section_form {
+	width: 60%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.div_img_form {
+	width: 49%;
+	height: auto;
+}
+
+.div_form_form {
+	width: 49%;
+	height: auto;
+	padding: 20px 10px;
+}
+
+.div_text_form {
+	text-align: center;
+}
+
+.title_form {
+	font-size: 22px;
+	margin: 0 0 2px 0;
+}
+
+.text_form {
+	font-size: 14px;
+	color: gray;
+	margin-bottom: 10px;
+}
+
+.lista_form {
+
+}
+
+.item_form {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.label_input {
+	font-size: 14px;
+	margin: 0 0 5px 2px;
+}
+
+.input_form {
+	width: 100%;
+	height: 30px;
+	border: none;
+	border-radius: 10px;
+	padding-left: 10px;
+	font-size: 14px;
+	color: black;
+}
+
+.item_submit {
+	display: flex;
+	justify-content: center;
+}
+
+.submit_form {
+	width: 200px;
+	height: 35px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 15px;
+	background-color: #cc3f3f;
+	font-size: 16px;
+	color: white;
+	cursor: pointer;
+}
+
+.submit_form:hover {
+	color: black;
+}
+
+/*============================SECTION VANTAGENS=======================*/
+
+.div_title_vantagens {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.lista_vantagens {
+	width: 100%;
+	height: auto;
+	padding: 30px 0;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.item_vantagens {
+	width: 250px;
+	height: auto;
+	text-align: center;
+}
+
+.img_vantagem {
+	width: 150px;
+	height: 150px;
+}
+
+.title_vantagem {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.text_vantagem {
+	font-size: 16px;
+}
+
+.div_cadastrar_button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.cadastrar_button {
+	width: 300px;
+	height: 45px;
+	border: none;
+	border-radius: 25px;
+	background-color: #cc3f3f;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 50px;
+}
+
+.cadastrar_button:hover {
+	color: black;
+}
+
+/*============================SECTION DONTMISS=======================*/
+
+.section_dontMiss {
+	width: 100%;
+	padding: 30px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #cc3f3f;
+}
+
+.div_text_dontMiss {
+	font-size: 20px;
+	font-family: 
+}
+
+.subtitle_dontMiss {
+	color: #7d1515;
+}
+
+/*============================SECTION FIQUE POR DENTRO=======================*/
+
+.div_section_fiquePorDentro {
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.div_title_fiquePorDentro {
+	width: 400px;
+	text-align: center;
+}
+
+.div_list_produtos {
+	width: 100%;
+	height: auto;
+}
+
+.lista_produtos {
+	width: 100%;
+	height: auto;
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.item_produtos {
+	width: 250px;
+	height: auto;
+	text-align: center;
+}
+
+.img_produto {
+	width: 150px;
+	height: 150px;
+}
+
+.title_produto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.desc_produto {
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.button_desconto {
+	width: 100%;
+	height: 35px;
+	border: none;
+	border-radius: 25px;
+	background-color: #cc3f3f;
+	color: white;
+	cursor: pointer;
+}
+
+.button_desconto:hover {
+	color: black;
+}
+
